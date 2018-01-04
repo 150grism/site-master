@@ -131,10 +131,15 @@ body {
   line-height: 36px;
   background: #5261ac;
   color: white;
+  margin: 0;
 }
 
-.interesting > h2 {
-  position: relative;
+.interesting > .custom-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.interesting > .custom-header > h2 {
   width: 163px;
 }
 
