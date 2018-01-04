@@ -177,8 +177,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  padding: 15.5px 0 15.5px 1px;
+  padding: 15.5px 0;
   &::after {
     content: '';
     top: 130px;
@@ -200,10 +199,11 @@ body {
   width: 83px;
   text-align: center;
   & > img {
-    height: 97px;
-    width: 75px;
+    box-sizing: border-box;
+    // height: 97px;
+    max-width: 81px;
     object-fit: cover;
-    padding: 2px;
+    padding: 3px;
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
   }
 }
@@ -231,20 +231,41 @@ body {
 }
 
 .liked__content-item {
+  position: relative;
   display: flex;
   flex-direction: row;
-  font-size: 13px;
-  // margin: 0;
-  & > p > a {
-    line-height: 40px;
-    text-decoration: none;
-    color: #22b9e0;
+  justify-content: flex-start;
+  margin: 18px 0;
+  &:last-of-type {
+    padding-bottom: 24px;
   }
+}
+
+.liked__image {
+  flex-shrink: 0;
+  width: 83px;
+  text-align: center;
   & > img {
     height: 75px;
     width: 75px;
     object-fit: cover;
     padding: 2px;
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.liked__text {
+  margin-left: 11px;
+  margin-top: -3px;
+  width: 234px;
+  font-size: 13px;
+  & > p {
+    margin: 0;
+    width: 224px;
+    & > a {
+      line-height: 40px;
+      text-decoration: none;
+      color: #22b9e0;
+    }
   }
 }
