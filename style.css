@@ -10,15 +10,15 @@ body {
 .graphics__left {
   position: absolute;
   transform-origin: left top;
-  transform: rotate(39deg);
+  transform: rotate(38deg);
   z-index: -1;
-  top: calc(-48px * 5 + 45px);
-  left: calc(-48px * 5);
+  top: calc(-50px * 5 + 50px);
+  left: calc(-50px * 5);
 }
 
 .graphics__left-item {
   width: 1000px;
-  height: 48px;
+  height: 50px;
 }
 
 .graphics__item_orange {
@@ -54,7 +54,7 @@ body {
   transform-origin: right top;
   transform: rotate(-45deg);
   z-index: -1;
-  top: -14px;
+  top: -23px;
   right: 0;
 }
 
@@ -77,8 +77,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 55px auto 20px;
-  width: 995px;
+  margin: 37px auto 17px;
+  width: 992px;
 }
 
 .topbar__logo {
@@ -92,10 +92,11 @@ body {
   text-decoration: none;
   color: white;
   font-size: 42px;
+  font-weight: 700;
   width: inherit;
-  transform: scale(1.09, 0.97);
-  font-weight: bold;
+  transform: scale(1.0133, 1);
   z-index: 1;
+  margin-top: 1px;
 }
 
 .topbar__logo > img {
@@ -105,20 +106,23 @@ body {
 }
 
 .topbar__search-bar {
-  margin-top: 21px;
+  margin: 22px 40px 0 0;
 }
 
 .topbar__search-bar-input {
   width: 318px;
   height: 36px;
   font-size: 19px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .topbar__search-bar-button {
   width: 120px;
-  height: 36px;
+  height: calc(36px / 0.97);
   padding: 0;
   font-size: 19px;
+  font-weight: 700;
+  transform: scale(1, 0.97);
   color: white;
   background: #00aedb;
   border: none;
@@ -129,6 +133,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   width: 125px;
+  margin: 0 1px 5px 0;
 }
 
 .topbar__social-icons > img {
@@ -143,11 +148,12 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   margin: 0 auto;
-  width: 995px;
+  width: 992px;
 }
 
 .navbar__link {
   font-size: 18px;
+  font-weight: 300;
   font-family: 'Open Sans', sans-serif;
   width: 106px;
   display: inline-block;
@@ -195,7 +201,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   width: 1001px;
-  margin-left: 27px;
+  margin-left: 33px;
 }
 
 .main-content__left {
@@ -204,9 +210,22 @@ body {
 
 .main-content__left > h1 {
   font-size: 35px;
-  font-weight: 800;
-  transform: scale(0.988, 1);
-  margin-left: 4px;
+  font-weight: 700;
+  transform: scale(1.02, 1);
+  margin: 21px 0 6px 6px;
+}
+
+.main-content__left > p {
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.73);
+  word-spacing: 2px;
+  letter-spacing: -0.15px;
+  line-height: 20px;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 .gallery {
@@ -232,7 +251,7 @@ body {
 }
 
 .main-content__right {
-  margin-top: 22px;
+  margin: 18px 4px 0 0;
   width: 328px;
 }
 
@@ -254,6 +273,7 @@ body {
 
 .interesting > .custom-header > h2 {
   width: 163px;
+  font-size: 19px;
 }
 
 .interesting > .custom-header > img {
@@ -270,7 +290,7 @@ body {
 .interesting__navbar-link {
   display: inline-block;
   width: 98px;
-  font-size: 18px;
+  font-size: 19px;
   text-align: center;
   line-height: 36px;
   background: #5261ac;
@@ -298,16 +318,24 @@ body {
   position: relative;
   display: flex;
   flex-direction: row;
-  padding: 15.5px 0;
+  padding: 13px 0;
 }
 
 .interesting__content-item::after {
   content: '';
-  top: 130px;
+  top: 125px;
   position: absolute;
-  width: 310px;
+  width: 315px;
   height: 1px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.interesting__content-item:first-of-type {
+  padding-top: 15.5px;
+}
+
+.interesting__content-item:first-of-type::after {
+  top: 127px;
 }
 
 .interesting__content-item:last-of-type {
@@ -340,7 +368,9 @@ body {
 
 .interesting__text > h3 {
   font-size: 15px;
-  margin: 0 0 8px;
+  font-weight: 600;
+  color: #22b9e0;
+  margin: 0 0 6px;
 }
 
 .interesting__text > p {
@@ -385,14 +415,13 @@ body {
 .liked__text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin-left: 11px;
   width: 234px;
   font-size: 13px;
 }
 
 .liked__text > p {
-  margin: 0;
+  margin: 2px 0 0;
   width: 224px;
 }
 
