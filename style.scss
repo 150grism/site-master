@@ -7,11 +7,67 @@ body {
   margin: 0;
 }
 
+
+.graphics__left{
+  position: absolute;
+  transform-origin: left top;
+  transform: rotate(39deg);
+  z-index: -1;
+  top: calc(-48px * 5 + 45px);
+  left: calc(-48px * 5);
+}
+
+.graphics__left-item {
+  width: 1000px;
+  height: 48px;
+}
+
+//модификаторы для graphics__left
+.graphics__item_orange {
+  background: #f78f1d;
+}
+.graphics__item_pink {
+  background: #ec098d;
+}
+.graphics__item_deep-blue {
+  background: #5261ac;
+}
+.graphics__item_green {
+  background: #8cc63f;
+}
+.graphics__item_light-blue {
+  background: #00aedb;
+}
+
+.gutter {
+  position: absolute;
+  height: 540px;
+  width: 14px;
+  right: -14px;
+  overflow: hidden;
+}
+
+.graphics__right {
+  position: absolute;
+  transform-origin: right top;
+  transform: rotate(-45deg);
+  z-index: -1;
+  top: -14px;
+  right: 0;
+}
+
+.graphics__right-item {
+  width: 400px;
+  height: 25px;
+}
+
 .centered-container {
+  position: relative;
   display: flex;
   flex-direction: column;
-  width: 1000px;
+  width: 1054px;
   margin: 0 auto;
+  background: white;
 }
 
 .topbar {
@@ -19,7 +75,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 55px 0 20px;
+  margin: 55px auto 20px;
+  width: 995px;
 }
 
 .topbar__logo {
@@ -34,12 +91,12 @@ body {
     width: inherit;
     transform: scale(1.09,0.97);
     font-weight: bold;
+    z-index: 1;
   }
   & > img {
     position: absolute;
     top: -9px;
     left: 0;
-    z-index: -1;
   }
 }
 
@@ -80,7 +137,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  width: 100%;
+  margin: 0 auto;
+  width: 995px;
 }
 
 .navbar__link {
@@ -126,12 +184,17 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 1001px;
+  margin-left: 27px;
 }
 
 .main-content__left {
   width: 652px;
   & > h1 {
     font-size: 35px;
+    font-weight: 800;
+    transform: scale(0.988, 1);
+    margin-left: 4px;
   }
 }
 
@@ -157,7 +220,8 @@ body {
 }
 
 .main-content__right {
-  width: 326px;
+  margin-top: 22px;
+  width: 328px;
   & h2 {
     font-size: 18px;
     font-weight: bold;
@@ -171,6 +235,7 @@ body {
 
 .interesting {
   & > .custom-header {
+    margin: 4px 0;
     display: flex;
     flex-direction: row;
     & > h2 {
@@ -186,6 +251,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  margin: 4px 0 0;
 }
 
 .interesting__navbar-link {
