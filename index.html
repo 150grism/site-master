@@ -11,11 +11,15 @@
 <body>
   <div class="centered-container">
     <div class="topbar">
-      <span class="topbar__logo">
+      <div class="topbar__logo">
         <img src="graphics/logo.png" alt="logo">
-        Эксперт
-      </span>
-      <input class="topbar__search-bar" type="text">
+        <a href="#">Эксперт</a>
+      </div>
+      
+      <form class="topbar__search-bar">
+        <input class="topbar__search-bar-input" type="text"
+        ><input class="topbar__search-bar-button" type="submit" value="ПОИСК">
+      </form> 
       <div class="topbar__social-icons">
         <img src="graphics/rss.png" alt="rss">
         <img src="graphics/facebook.png" alt="facebook">
