@@ -258,6 +258,9 @@ body {
   flex-shrink: 0;
   width: 83px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .liked__image > img {
@@ -269,8 +272,10 @@ body {
 }
 
 .liked__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-left: 11px;
-  margin-top: -3px;
   width: 234px;
   font-size: 13px;
 }
@@ -281,7 +286,8 @@ body {
 }
 
 .liked__text > p > a {
-  line-height: 40px;
+  display: inline-block;
+  margin-top: 11px;
   text-decoration: none;
   color: #22b9e0;
 }
