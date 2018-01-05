@@ -331,6 +331,7 @@ body {
 }
 
 .interesting__navbar-link {
+  position: relative;
   display: inline-block;
   width: 98px;
   font-size: 19px;
@@ -343,6 +344,19 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+.interesting__navbar-link:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-top: 8px solid;
+  left: calc(50% - 6px);
+  bottom: -14px;
+  z-index: 500;
+  border-top-color: red;
 }
 
 .interesting__navbar-link:last-of-type {
@@ -359,6 +373,14 @@ body {
 
 .interesting__navbar-link_tv {
   background: #00aedb;
+}
+
+.interesting__content {
+  display: none;
+}
+
+.interesting__content_visible {
+  display: initial;
 }
 
 .interesting__content-item {
