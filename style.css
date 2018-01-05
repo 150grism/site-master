@@ -132,6 +132,7 @@ body {
   color: white;
   background: #00aedb;
   border: none;
+  cursor: pointer;
 }
 
 .topbar__social-icons {
@@ -166,6 +167,9 @@ body {
   text-align: center;
   line-height: 36px;
   color: white;
+  padding: 0;
+  border: none;
+  cursor: pointer;
 }
 
 .navbar__link:last-of-type {
@@ -263,10 +267,16 @@ body {
 
 .gallery {
   padding: 12.5px;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+  background: #fafafa;
 }
 
 .gallery__big-item > img {
-  margin: 12.5px;
+  display: block;
+  margin: 0 auto 12.5px;
+  max-width: 626px;
+  max-height: 377px;
+  object-fit: contain;
 }
 
 .gallery__small-items > img {
@@ -329,6 +339,10 @@ body {
   background: #5261ac;
   color: white;
   margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .interesting__navbar-link:last-of-type {
