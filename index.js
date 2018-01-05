@@ -20,9 +20,10 @@ var indexOfLastVisibleContent = 0;
 
 for (let i = 0; i < interestingNavbarLinks.length; i++) {
   interestingNavbarLinks[i].addEventListener('click', function() {
-    // console.log(interestingNavbarLinks[i].classList.contains('interesting__content_visible'));
-    interestingNavbarLinks[indexOfLastVisibleContent].classList.remove('interesting__content_visible');
-    interestingNavbarLinks[i].classList.add('interesting__content_visible');
+    interestingNavbarLinks[indexOfLastVisibleContent].classList.remove('interesting__navbar-link_active');
+    interestingContents[indexOfLastVisibleContent].classList.remove('interesting__content_visible');
+    interestingNavbarLinks[i].classList.add('interesting__navbar-link_active');
+    interestingContents[i].classList.add('interesting__content_visible');
     indexOfLastVisibleContent = i;
   })
 }
