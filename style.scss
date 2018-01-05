@@ -9,6 +9,7 @@ $barsWidth: 992px;
 
 body {
   margin: 0;
+  background: #ebebeb;
 }
 
 
@@ -42,10 +43,13 @@ body {
 .graphics__item_light-blue {
   background: #00aedb;
 }
+.graphics__item_grey {
+  background: #ebebeb;
+}
 
 .gutter {
   position: absolute;
-  height: 540px;
+  height: 100%;
   width: 14px;
   right: -14px;
   overflow: hidden;
@@ -61,7 +65,7 @@ body {
 }
 
 .graphics__right-item {
-  width: 400px;
+  width: 1500px;
   height: $rightGraphicsHeight;
 }
 
@@ -207,7 +211,31 @@ body {
     font-weight: 700;
     transform: scale(1.02, 1);
     margin: 21px 0 6px 6px;
-    // margin-left: calc(652px * 0.02 / 2);
+    &:before {
+      content: '28';
+      text-align: center;
+      font-size: 35px;
+      color: rgb(235, 235, 235);
+      top: 9px;
+      left: -78px;
+      position: absolute;
+      width: 68px;
+      height: 46px;
+      background: #f78f1d;
+    }
+    &:after {
+      content: 'ФЕВ';
+      text-align: center;
+      font-size: 19px;
+      font-weight: 300;
+      color: white;
+      top: 55px;
+      left: -72px;
+      position: absolute;
+      width: 62px;
+      height: 27px;
+      background: #00aedb;
+    }
   }
   & > p {
     margin-top: 6px;

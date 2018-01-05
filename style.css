@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
@@ -5,6 +6,7 @@
 
 body {
   margin: 0;
+  background: #ebebeb;
 }
 
 .graphics__left {
@@ -41,9 +43,13 @@ body {
   background: #00aedb;
 }
 
+.graphics__item_grey {
+  background: #ebebeb;
+}
+
 .gutter {
   position: absolute;
-  height: 540px;
+  height: 100%;
   width: 14px;
   right: -14px;
   overflow: hidden;
@@ -59,7 +65,7 @@ body {
 }
 
 .graphics__right-item {
-  width: 400px;
+  width: 1500px;
   height: 25px;
 }
 
@@ -213,6 +219,33 @@ body {
   font-weight: 700;
   transform: scale(1.02, 1);
   margin: 21px 0 6px 6px;
+}
+
+.main-content__left > h1:before {
+  content: '28';
+  text-align: center;
+  font-size: 35px;
+  color: #ebebeb;
+  top: 9px;
+  left: -78px;
+  position: absolute;
+  width: 68px;
+  height: 46px;
+  background: #f78f1d;
+}
+
+.main-content__left > h1:after {
+  content: 'ФЕВ';
+  text-align: center;
+  font-size: 19px;
+  font-weight: 300;
+  color: white;
+  top: 55px;
+  left: -72px;
+  position: absolute;
+  width: 62px;
+  height: 27px;
+  background: #00aedb;
 }
 
 .main-content__left > p {
