@@ -123,12 +123,9 @@ body {
 .topbar__search-bar-button {
   width: 120px;
   height: calc(36px / 0.97);
-  // width: calc(120px / 1.021);
-  // height: calc(36px / 0.974);
   padding: 0;
   font-size: 19px;
   font-weight: 700;
-  // transform: scale(1.021, 0.974);
   transform: scale(1, 0.97);
   color: white;
   background: #00aedb;
@@ -260,7 +257,6 @@ body {
 
 .gallery {
   padding: 12px;
-  // box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
   border: 1px solid #bfbfbf;
   background: #fafafa;
   width: 651px;
@@ -288,7 +284,6 @@ body {
     height: 144px;
     object-fit: cover;
     padding: 3px;
-    // box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
     border: 1px solid #bfbfbf;
     cursor: pointer;
   }
@@ -335,7 +330,6 @@ body {
   display: inline-block;
   width: 98px;
   font-size: 19px;
-  // font-weight: bold;
   text-align: center;
   line-height: 36px;
   color: white;
@@ -414,11 +408,9 @@ body {
   text-align: center;
   & > img {
     box-sizing: content-box;
-    // height: 97px;
     max-width: 81px;
     object-fit: cover;
     padding: 3px;
-    // box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
     border: 1px solid #bfbfbf;
   }
 }
@@ -474,7 +466,6 @@ body {
     width: 69px;
     object-fit: cover;
     padding: 2px;
-    // box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
     border: 1px solid #bfbfbf;
   }
 }
