@@ -11,8 +11,6 @@ for (let i = 0; i < smallImages.length; i++) {
   })
 }
 
-console.log(bigImage);
-
 //Функционал кнопок в "интересном"
 var interestingNavbarLinks = document.querySelectorAll('.interesting__navbar-link');
 var interestingContents = document.querySelectorAll('.interesting__content');
@@ -28,4 +26,13 @@ for (let i = 0; i < interestingNavbarLinks.length; i++) {
   })
 }
 
-console.log(interestingNavbarLinks.length);
+//При max-width: 750px
+var mobileMenu = document.querySelector('.mobile-menu');
+var navbar = document.querySelector('.navbar');
+var state = false;
+
+mobileMenu.addEventListener('click', function() {
+  navbar.classList.toggle('mobile-navbar_active');
+  mobileMenu.src = state === false ? "graphics/close.svg" : "graphics/hamburger.svg"
+  state = !state;
+})
