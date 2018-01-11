@@ -28,11 +28,29 @@ for (let i = 0; i < interestingNavbarLinks.length; i++) {
 
 //При max-width: 750px
 var mobileMenu = document.querySelector('.mobile-menu');
+var navbarLinks = document.querySelectorAll('.navbar__link');
 var navbar = document.querySelector('.navbar');
 var state = false;
 
 mobileMenu.addEventListener('click', function() {
   navbar.classList.toggle('mobile-navbar_active');
-  mobileMenu.src = state === false ? "graphics/close.svg" : "graphics/hamburger.svg"
+  if (state === false) {
+    document.body.style.overflowY = "hidden";
+    mobileMenu.src = "graphics/close.svg"; 
+  } else {
+    document.body.style.overflowY = "auto";
+    mobileMenu.src = "graphics/hamburger.svg";
+  }
   state = !state;
 })
+
+for (let i = 0; i < navbarLinks.length; i++) {
+  navbarLinks[i].addEventListener('click', function() {
+    if (state === true) {
+      navbar.classList.remove('mobile-navbar_active');
+      document.body.style.overflowY = "auto";
+      mobileMenu.src = "graphics/hamburger.svg";
+      state = false;
+    }
+  })
+}

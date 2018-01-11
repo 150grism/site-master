@@ -85,27 +85,32 @@ body {
   right: 15px;
   top: 50px;
   z-index: 150;
+  cursor: pointer;
 }
 
 .mobile__search-bar {
-  margin: 22px 40px 0 0;
   display: none;
+  justify-content: center;
+  align-items: center;
+  height: 72px;
+  width: 100%;
+  margin-top: 60px;
+  background: white;
 }
 
 .mobile__search-bar-input {
-  width: 318px;
+  width: calc(100% / 2);
   height: 36px;
   font-size: 19px;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .mobile__search-bar-button {
-  width: 120px;
-  height: calc(36px / 0.97);
+  width: calc(100% / 7);
+  height: 36px;
   padding: 0;
   font-size: 19px;
   font-weight: 700;
-  transform: scale(1, 0.97);
   color: white;
   background: #00aedb;
   border: none;
@@ -190,7 +195,7 @@ body {
 }
 
 .mobile-navbar_active {
-  display: initial !important; 
+  display: flex !important; 
   width: 100% !important;
 }
 
@@ -207,6 +212,7 @@ body {
   padding: 0;
   border: none;
   cursor: pointer;
+  text-decoration: none;
   &:last-of-type {
     width: 111px;
     flex-grow: 1;
@@ -335,7 +341,7 @@ body {
 .main-content__right {
   display: flex;
   flex-direction: column;
-  margin: 18px 4px 0 0;
+  margin: 18px 4px 40px 0;
   width: 328px;
   & h2 {
     font-size: 18px;
@@ -564,6 +570,10 @@ body {
     margin-left: 10px;
     margin-right: 15px;
   }
+  .interesting__navbar-link_tv {
+    text-align: left;
+    padding-left: 20px;
+  }
 }
 
 @media screen and (max-width: 1098px) {
@@ -614,6 +624,25 @@ body {
     display: none;
     height: 100%;
     z-index: 100;
+    background: white;
+  }
+  .navbar__link {
+    font-size: 18px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    line-height: 72px;
+    cursor: pointer;
+    &:last-of-type {
+      flex-grow: 1;
+      width: 100%;
+      text-align: center;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .mobile__search-bar {
+    display: flex;
   }
   .topbar {
     justify-content: flex-start;
@@ -624,9 +653,6 @@ body {
   }
   .topbar__search-bar {
     display: none;
-  }
-  .mobile__search-bar {
-    display: initial;
   }
   .mobile-menu {
     display: initial;
@@ -691,10 +717,6 @@ body {
   .liked {
     margin: 0;
   }
-  .interesting__navbar-link_tv {
-    text-align: left;
-    padding-left: 20px;
-  }
 }
 
 @media screen and (max-width: 590px) {
@@ -704,6 +726,7 @@ body {
   .topbar__social-icons {
     margin-left: -5px;
     justify-content: flex-start;
+    margin-bottom: 5px;
     & > img {
       margin-left: 2px;
       width: 25px;
