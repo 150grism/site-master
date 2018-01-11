@@ -92,7 +92,7 @@ body {
   display: none;
   justify-content: center;
   align-items: center;
-  height: 72px;
+  height: 50px;
   width: 100%;
   margin-top: 60px;
   background: white;
@@ -100,14 +100,14 @@ body {
 
 .mobile__search-bar-input {
   width: calc(100% / 2);
-  height: 36px;
+  height: 32px;
   font-size: 19px;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .mobile__search-bar-button {
   width: calc(100% / 7);
-  height: 36px;
+  height: 32px;
   padding: 0;
   font-size: 19px;
   font-weight: 700;
@@ -619,7 +619,7 @@ body {
     width: 100%;
     display: block;
     text-align: center;
-    line-height: 72px;
+    line-height: 50px;
     cursor: pointer;
     &:last-of-type {
       flex-grow: 1;
@@ -647,16 +647,6 @@ body {
   }
   .topbar__social-icons {
     margin-right: 70px;
-  }
-  .navbar__link {
-    width: 100%;
-    display: block;
-    line-height: 72px;
-    &:last-of-type {
-      text-align: center;
-      padding-left: 0;
-      padding-right: 0;
-    }
   }
   .gallery {
     width: 100%;
