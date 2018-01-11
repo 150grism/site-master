@@ -89,6 +89,7 @@ body {
 
 .mobile__search-bar {
   display: none;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   height: 50px;
