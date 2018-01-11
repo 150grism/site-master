@@ -90,7 +90,7 @@ body {
 
 .mobile-menu_close {
   position: relative;
-  // display: none;
+  display: none;
   align-self: flex-end;
   margin-top: 51px;
   margin-right: 15px;
@@ -656,6 +656,9 @@ body {
     display: none;
   }
   .mobile-menu {
+    display: initial;
+  }
+  .mobile-menu_close {
     display: initial;
   }
   .topbar__social-icons {
