@@ -508,10 +508,6 @@ body {
   margin: 0;
 }
 
-.liked {
-  flex: 1;
-}
-
 .liked__content-item {
   position: relative;
   display: flex;

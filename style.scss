@@ -470,7 +470,6 @@ body {
   justify-content: center;
   margin-left: 11px;
   margin-top: -6px;
-  // width: $pWidth;
   & > h3 {
     font-size: 15px;
     font-weight: 600;
@@ -480,15 +479,6 @@ body {
   & > p {
     font-size: 13px;
     margin: 0;
-    // width: 224px;
-  }
-}
-
-
-.liked {
-  flex: 1;
-  & > h2 {
-    // width: 326px;
   }
 }
 
@@ -527,10 +517,8 @@ body {
   flex-direction: column;
   margin-left: 11px;
   font-size: 13px;
-  // width: $pWidth;
   & > p {
     margin: 2px 0 0;
-    // width: 224px;
     & > a {
       display: inline-block;
       margin-top: 11px;
@@ -679,7 +667,6 @@ body {
     }
   }
   .gallery__small-items {
-    // flex-wrap: wrap;
     & > img {
       width: calc(100% / 4 - 8px);
       height: calc((100vw - 125px) / 4 - 8px);
